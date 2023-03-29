@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --ff-general:'Roboto', sans-serif;
+  --fc-color-title: #0C3440;
+  --fc-label-title: #00453A;
+  --bg-input: #DCE2E9;
+  --fc-placeholder: rgba(73, 80, 87, 0.5);
+  --bg-button: #02799D;
+  --fc-button: #ffffff;
+  --bc-erro: #F03E3E;
+}
+
+body{
+  background: #040924;
+}
+
+.page{
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.card{
+  padding: 4.8rem 6.4rem 6.4rem;
+  background: #ffffff;
+  max-width: 42.8rem;
+  margin-inline: auto;
+  border-radius: .6rem;
+  box-shadow: 0px .2rem .4rem rgba(0, 0, 0, 0.1);
+}
+
+h1{
+  margin-top: 0;
+  
+
+  font-family: var(--ff-general);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+form input{
+  background: var(--bg-input);
+  border-radius: .4rem;
+  border: 1px solid var(--fc-placeholder);
+
+  height: 5.2rem;
+  width: 30rem;
+}
+
+form h1{
+  margin-bottom: 3.8rem;
+}
+
+.input-wrapper label{
+  font-family: var(--ff-general);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--fc-label-title);
+}
+
+form button{
+  margin-top: 3.2rem ;
+  width: 30rem;
+  height: 5.2rem;
+  padding: 1.6rem auto;
+
+  font-family: var(--ff-general);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--fc-button);
+
+  border: none;
+  background: var(--bg-button);
+  border-radius: .4rem;
+}
+
+form > :nth-child(3){
+  margin-top: 1.8rem;
+}
+
+.erro{
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  
+  background: var(--bc-erro);
+  
+  font-family: var(--ff-general);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--fc-button);
+ 
+ 
+  padding: .8rem auto 0;
+  height: 3.6rem;
+  
+}
+
+.hide{
+  display: none;
+}
+
+.popup{
+  display: grid;
+  place-items: center;
+
+  content: '';
+  background: #0000008e;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  font-family: var(--ff-general);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+
+.wrapper img{
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.wrapper h1{
+  margin: 4.8rem 6.4rem 4.8rem;
+}

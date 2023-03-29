@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+   <div class="erro hide">Digite somente números</div>
+   <div class="page">
+    <main class="card">
+      <form action="">
+        <h1>Cálculo de IMC</h1>
+        <div class="input-wrapper">
+          <label for="weight">Peso (kg)</label>
+          <input type="text" id="weight">
+        </div>
+        
+        <div class="input-wrapper">  
+          <label for="height">Altura (m)</label>
+          <input type="text" id="height">
+        </div>
+        <button type="submit">Cálculo IMC <img src="/assets/arrow.svg" alt=""></button>  
+      </form>      
+    </main>
+  </div> 
+  
+  <div class="popup">
+    <div class="wrapper card">
+      <img src="/assets/close.svg" alt="">
+      Seu IMC é de 28
+    </div>
+  </div>
+</body>
+</html>
