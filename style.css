@@ -93,6 +93,13 @@ form > :nth-child(3){
   margin-top: 1.8rem;
 }
 
+.erro.open{
+  visibility: visible;
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
 .erro{
   display: flex;
   margin: 0 auto;
@@ -110,11 +117,21 @@ form > :nth-child(3){
  
   padding: .8rem auto 0;
   height: 3.6rem;
-  
+
+  visibility: hidden;
+  opacity: 0;
+
+  transform: translateY(-30px);
+  transition: transform .5px;
 }
 
 .hide{
   display: none;
+}
+
+.popup.open{
+  visibility: visible;
+  opacity: 1;
 }
 
 .popup{
@@ -129,6 +146,9 @@ form > :nth-child(3){
   z-index: 1;
   left: 0;
   top: 0;
+
+  visibility: hidden;
+  opacity: 0;
 }
 
 .wrapper{
@@ -149,6 +169,12 @@ form > :nth-child(3){
   top: 16px;
   width: 24px;
   height: 24px;
+  transition: ease-in;
+}
+
+.wrapper img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .wrapper h1{
