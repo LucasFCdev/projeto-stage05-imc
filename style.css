@@ -20,7 +20,7 @@ body{
   background: #040924;
 }
 
-.page{
+.conteiner{
   display: grid;
   height: 100vh;
   place-items: center;
@@ -93,14 +93,14 @@ form > :nth-child(3){
   margin-top: 1.8rem;
 }
 
-.erro.open{
+.alert-error.open{
   visibility: visible;
   opacity: 1;
 
   transform: translateY(0);
 }
 
-.erro{
+.alert-error{
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -129,12 +129,12 @@ form > :nth-child(3){
   display: none;
 }
 
-.popup.open{
+.modal-wrapper.open{
   visibility: visible;
   opacity: 1;
 }
 
-.popup{
+.modal-wrapper{
   display: grid;
   place-items: center;
 
@@ -151,7 +151,7 @@ form > :nth-child(3){
   opacity: 0;
 }
 
-.wrapper{
+.modal{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -163,7 +163,7 @@ form > :nth-child(3){
 }
 
 
-.wrapper img{
+.modal img{
   position: absolute;
   right: 16px;
   top: 16px;
@@ -172,11 +172,11 @@ form > :nth-child(3){
   transition: ease-in;
 }
 
-.wrapper img:hover{
+.modal img:hover{
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.wrapper h1{
+.modal h1{
   margin: 4.8rem 6.4rem 4.8rem;
 }
