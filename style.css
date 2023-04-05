@@ -55,6 +55,7 @@ form input{
   background: var(--bg-input);
   border-radius: .4rem;
   border: 1px solid var(--fc-placeholder);
+  padding: 1.6rem;
 
   height: 5.2rem;
   width: 30rem;

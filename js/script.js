@@ -1,12 +1,8 @@
-import {modal} from './modal.js'
+import { Modal } from './modal.js'
 
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
 const form = document.querySelector('form')
-
-const modalWrapper = document.querySelector('.modal-wrapper')
-const span = document.querySelector('span')
-const button = document.querySelector('.modal button.close')
 
 form.onsubmit = event => {
   event.preventDefault()
@@ -18,8 +14,8 @@ form.onsubmit = event => {
   const message = `Seu IMC é de ${result}`
 
   
-  modal.open()
-  modal.span.innerText = message
+  Modal.open()
+  Modal.span.innerText = message
  
 }
 
