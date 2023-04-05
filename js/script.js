@@ -10,6 +10,10 @@ form.onsubmit = event => {
   const weight = inputWeight.value
   const height = inputHeight.value
 
+  const weightResult = testNumber(weight)
+  const heightResult = testNumber(height)
+  return
+
   const result = IMC(weight, height)
   const message = `Seu IMC é de ${result}`
 
@@ -17,6 +21,11 @@ form.onsubmit = event => {
   Modal.open()
   Modal.span.innerText = message
  
+}
+
+function testNumber(value) {
+  return isNaN(value) || value == ""
+
 }
 
 function IMC(weight, height) {
