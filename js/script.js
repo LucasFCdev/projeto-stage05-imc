@@ -30,4 +30,6 @@ form.onsubmit = event => {
  
 }
 
-
+form.oninput = event => {
+    alertError.close()
+ }
